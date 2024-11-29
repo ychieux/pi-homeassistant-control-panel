@@ -15,9 +15,6 @@ SCRIPTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 # Set the timezone
 dpkg-reconfigure tzdata
 
-# Set Hostname to displayboard
-raspi-config nonint do_hostname "controlpanel"
-
 # Install the bits we need
 apt install -y matchbox x11-xserver-utils xinit ttf-mscorefonts-installer unattended-upgrades vim unclutter firefox-esr cec-utils
 
